@@ -16,8 +16,9 @@ import {
   SheetTrigger,
 } from "../ui/sheet";
 import CartItem from "./cart-item";
-import { ScrollArea } from "@radix-ui/react-scroll-area";
-import { Separator } from "@radix-ui/react-separator";
+import { ScrollArea } from "../ui/scroll-area";
+import { Separator } from "../ui/separator";
+
 
 export const Cart = () => {
   const { data: cart, isPending: cartIsLoading } = useQuery({
