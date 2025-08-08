@@ -18,6 +18,7 @@ import {
 import CartItem from "./cart-item";
 import { ScrollArea } from "../ui/scroll-area";
 import { Separator } from "../ui/separator";
+import Link from "next/link";
 
 
 export const Cart = () => {
@@ -78,7 +79,11 @@ export const Cart = () => {
                 <p>{formatCentsToBRL(cart?.totalPriceInCents ?? 0)}</p>
               </div>
 
-              <Button className="mt-5 rounded-full">Finalizar compra</Button>
+              <Button className="mt-5 rounded-full">
+                <Link href="/cart/identification">
+                    Finalizar compra
+                </Link>
+              </Button>
             </div>
           )}
         </div>
