@@ -3,11 +3,10 @@ import Image from "next/image";
 import { toast } from "sonner";
 
 import { formatCentsToBRL } from "@/helpers/money";
-import { useDecreaseCartProduct } from "@/hooks/mutations/use-decrease-cart-product";
-import { useIncreaseCartProduct } from "@/hooks/mutations/use-increase-cart-product";
-import { useRemoveProductFromCart } from "@/hooks/mutations/use-remove-product-from-cart";
-
 import { Button } from "../ui/button";
+import { useDecreaseCartProduct } from "@/hooks/mutations/use-decrease-cart-product";
+import { useRemoveProductFromCart } from "@/hooks/mutations/use-remove-product-from-cart";
+import { useIncreaseCartProduct } from "@/hooks/mutations/use-increase-cart-product";
 
 interface CartItemProps {
   id: string;
