@@ -9,7 +9,7 @@ import { shippingAddressTable } from "@/db/schema";
 import { auth } from "@/lib/auth";
 import Header from "@/components/common/header";
 
-// import CartSummary from "../components/cart-summary";
+import CartSummary from "../components/cart-summary";
 import Addresses from "./components/addresses";
 
 const IdentificationPage = async () => {
@@ -52,7 +52,7 @@ const IdentificationPage = async () => {
           shippingAddresses={shippingAddresses}
           defaultShippingAddressId={cart.shippingAddress?.id || null}
         />
-        {/* <CartSummary
+        <CartSummary
           subtotalInCents={cartTotalInCents}
           totalInCents={cartTotalInCents}
           products={cart.items.map((item) => ({
@@ -63,7 +63,7 @@ const IdentificationPage = async () => {
             priceInCents: item.productVariant.priceInCents,
             imageUrl: item.productVariant.imageUrl,
           }))}
-        /> */}
+        />
       </div>
       <div className="mt-12">
         <Footer />
