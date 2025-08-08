@@ -48,11 +48,8 @@ export const Cart = () => {
                     productName={item.productVariant.product.name}
                     productVariantName={item.productVariant.name}
                     productVariantImageUrl={item.productVariant.imageUrl}
-                    productVariantPriceInCents={
-                      item.productVariant.priceInCents
-                    }
-                    quantity={item.quantity}
-                  />
+                    productVariantPriceInCents={item.productVariant.priceInCents}
+                    quantity={item.quantity} productVariantId={""}                  />
                 ))}
               </div>
             </ScrollArea>
